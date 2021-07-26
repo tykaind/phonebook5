@@ -32,7 +32,7 @@
 
 			<tr>
 				<td align="center"><a href="${pageContext.request.contextPath}/delete?personId=${pList.personId}">삭제</a></td>
-				<td align="center"><a href="${pageContext.request.contextPath}/updateForm?personId=${pList.personId}">수정</a></td>
+				<td align="center"><a href="${pageContext.request.contextPath}/updateForm2?personId=${pList.personId}">수정</a></td>
 			</tr>
 		</table>
 		<br>

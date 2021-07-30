@@ -34,17 +34,11 @@ public class PhoneDao {
 	//저장2
 	public int personInsert2(String name, String hp, String company) {
 		
-		System.out.println(name);
-		System.out.println(hp);
-		System.out.println(company);
-		
 		Map<String, Object> personMap = new HashMap<String, Object>();
 		personMap.put("name", name);
 		personMap.put("hp", hp);
 		personMap.put("company", company);
-		System.out.println("personMap :" + personMap);
 		int count = sqlSession.insert("phonebook.personInsert2", personMap);
-		System.out.println(count + "건 등록되었습니다.(Dao결과)");
 		return count;
 	}
 	
